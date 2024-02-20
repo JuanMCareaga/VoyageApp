@@ -104,64 +104,116 @@ const Carrusel1 = () => {
 
 const styles = StyleSheet.create({
   carruselContainerEvent: {
-    // Estilos para tu carrusel
+    width: 400,
+    height: 400,
+    position: 'relative',
   },
   imgContainer: {
-    // Estilos para tu img-container
+    width: 400,
+    height: 400,
+    display: 'flex',
+    alignItems: 'center',
+    overflow: 'hidden',
+    borderRadius: 20,
   },
   imgEventCarrusel: {
-    // Estilos para tu img-event-carrusel
-  },
-  arrowContainer: {
-    // Estilos para tu arrow-container
-  },
-  paginationContainer: {
-    // Estilos para tu pagination-container
-  },
-  dotStyle: {
-    // Estilos para tu dot
-  },
-  inactiveDotStyle: {
-    // Estilos para tu dot inactivo
-  },
-  favoritoIcon: {
-    // Estilos para tu favorito-icon
-  },
-  favoritoClick: {
-    // Estilos para tu favorito-icon clickeado
+    resizeMode: 'cover',
+    width: '100%',
+    height: '100%',
   },
   footerCarrusel: {
-    // Estilos para tu footer-carrusel
+    width: 400,
   },
   footerHeaderCarrusel: {
-    // Estilos para tu footer-header-carrusel
-  },
-  footerHeaderText: {
-    // Estilos para tu texto del footer
+    paddingTop: 10,
+    fontFamily: 'Poppins',
+    fontSize: 14,
+    fontStyle: 'normal',
+    fontWeight: '400',
+    color: '#6b7280',
+    lineHeight: 20,
   },
   footerBodyCarrusel: {
-    // Estilos para tu footer-body-carrusel
+    paddingTop: 10,
+    fontFamily: 'Poppins',
+    fontSize: 16,
+    fontStyle: 'normal',
+    fontWeight: '500',
+    color: '#111827',
+    lineHeight: 24,
   },
   footerFooterCarrusel: {
-    // Estilos para tu footer-footer-carrusel
+    paddingTop: 20,
+    display: 'flex',
+    justifyContent: 'space-between',
   },
   flex: {
-    // Estilos para tu contenedor flex
+    display: 'flex',
+    alignItems: 'center',
   },
-  price: {
-    // Estilos para tu precio
+  flecha: {
+    backgroundColor: 'white',
+    borderRadius: 50,
+    width: 30,
+    height: 30,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    cursor: 'pointer',
+    position: 'absolute',
+    top: '50%',
+    transform: [{ translateY: -50 }],
+    zIndex: 1,
   },
-  subtextCarousel: {
-    // Estilos para tu subtexto del carrusel
+  flechaSiguiente: {
+    right: 10,
   },
-  score: {
-    // Estilos para tu puntuación
+  flechaAtras: {
+    left: 10,
   },
-  iconstar: {
-    // Estilos para tu icono de estrella
+  customDots: {
+    position: 'absolute',
+    zIndex: 1,
+    width: '100%',
+    bottom: 10,
+    textAlign: 'center',
+    padding: 0,
+    margin: 0,
   },
-  scoreNumber: {
-    // Estilos para tu número de puntuación
+  customDotsLi: {
+    display: 'inline-block',
+    margin: 0,
+    height: '100%',
+  },
+  customDotsLiButton: {
+    backgroundColor: 'rgb(243, 237, 237)',
+    borderWidth: 1,
+    padding: 4,
+    outline: 'none',
+    cursor: 'pointer',
+    borderRadius: '50%',
+  },
+  customDotsLiActiveButton: {
+    backgroundColor: 'white',
+    padding: 6,
+  },
+  favoritoIcon: {
+    backgroundColor: 'rgba(17, 24, 39, 0.5)',
+    display: 'flex',
+    color: 'white',
+    borderRadius: 50,
+    marginTop: 20,
+    marginRight: 20,
+    padding: 8,
+    width: 30,
+    height: 30,
+    cursor: 'pointer',
+    position: 'absolute',
+    top: 0,
+    right: 0,
+  },
+  favoritoClick: {
+    color: 'red',
   },
 });
 

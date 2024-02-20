@@ -30,22 +30,39 @@ function CustomMap() {
 }
 
 const styles = StyleSheet.create({
-  mapContainer: {
-    flex: 1,
+  mapa: {
+    position: 'absolute',
+    left: 849,
+    width: 800,
+    height: 760,
   },
-  map: {
-    flex: 1,
-  },
-  customMarker: {
-    backgroundColor: "white",
-    borderRadius: 8,
-    padding: 5,
-    borderWidth: 1,
-    borderColor: "#ccc",
+  popupContent: {
+    backgroundColor: 'white',
+    padding: 10,
+    borderRadius: 5,
+    shadowColor: 'rgba(0, 0, 0, 0.1)',
+    shadowOffset: { width: 0, height: 0 },
+    shadowRadius: 10,
+    shadowOpacity: 1,
   },
   markerText: {
-    color: "#333",
-    fontWeight: "bold",
+    fontFamily: 'Roboto, Arial, sans-serif',
+    fontSize: 14,
+    lineHeight: 20,
+    color: '#111827',
+    fontWeight: '600',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    width: 50,
+    height: 30,
+    backgroundColor: 'white',
+    padding: 5,
+    borderRadius: 5,
+    shadowColor: 'rgba(0, 0, 0, 0.1)',
+    shadowOffset: { width: 0, height: 0 },
+    shadowRadius: 10,
+    shadowOpacity: 1,
   },
 });
 

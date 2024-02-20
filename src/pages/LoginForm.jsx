@@ -69,3 +69,71 @@ const LoginForm = () => {
 };
 
 export default LoginForm;
+
+
+const styles = StyleSheet.create({
+  contenedorForm: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    color: '#1f2937',
+    fontStyle: 'normal',
+    fontSize: 16,
+    fontWeight: '400',
+    lineHeight: 24,
+    fontFamily: 'Poppins, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
+  },
+  h1: {
+    marginTop: 150,
+    display: 'flex',
+    justifyContent: 'center',
+    fontFamily: 'Poppins, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"',
+    fontStyle: 'normal',
+    fontSize: 48,
+    lineHeight: 55,
+    fontWeight: '600',
+    color: '#111827',
+  },
+  p: {
+    display: 'flex',
+    justifyContent: 'center',
+  },
+  form: {
+    marginTop: 600,
+    width: '100%',
+  },
+  label: {
+    marginLeft: 6,
+    display: 'flex',
+    justifyContent: 'space-between',
+    paddingTop: 20,
+    paddingBottom: 0,
+    fontWeight: '500',
+  },
+  a: {
+    textDecoration: 'none',
+    color: '#1f2937',
+    fontWeight: '500',
+  },
+  input: {
+    height: 40,
+    width: 420,
+    margin: 3,
+    padding: 8,
+    borderWidth: 1,
+    borderColor: '#ccc',
+    borderRadius: 10,
+  },
+  formButton: {
+    height: 50,
+    width: 420,
+    margin: 20,
+    padding: 10,
+    borderWidth: 1,
+    borderRadius: 30,
+    color: 'white',
+    backgroundColor: 'rgba(51, 60, 135, 1)',
+    cursor: 'pointer',
+    fontWeight: '600',
+  },
+});

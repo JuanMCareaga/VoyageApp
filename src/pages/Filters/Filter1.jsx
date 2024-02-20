@@ -74,71 +74,106 @@ const Filter1 = () => {
 };
 
 const styles = StyleSheet.create({
-  filterContainer: {
-    paddingVertical: 80,
-    flexDirection: "row",
+  filters: {
+    paddingTop: 80,
+    display: 'flex',
   },
   filter: {
     padding: 8,
     borderWidth: 1,
-    borderColor: "#111827",
+    borderColor: '#111827',
     borderRadius: 20,
+    cursor: 'pointer',
     marginLeft: 40,
-    flexDirection: "row",
-    alignItems: "center",
+    display: 'flex',
+    alignItems: 'center',
   },
-  titleFilter: {
-    // Añade estilos según tus necesidades
-  },
+  titleFilter: {},
   arrowFilter: {
-    marginLeft: 10,
     marginTop: 6,
+    marginLeft: 10,
   },
   dropFilter1: {
-    display: "none",
-    position: "absolute",
+    display: 'none',
+  },
+  dropFilter1Show: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    position: 'absolute',
     marginTop: 440,
     marginLeft: 300,
-    backgroundColor: "white",
+    backgroundColor: 'white',
     borderWidth: 1,
-    borderColor: "#c8cbd1",
+    borderColor: '#c8cbd1',
     borderRadius: 15,
-    elevation: 5,
-    padding: 10,
-  },
-  show: {
-    display: "flex",
+    boxShadow: '0px 10px 6px 5px rgba(0, 0, 0, 0.1)',
   },
   checkboxContainer: {
-    flexDirection: "row",
-    alignItems: "center",
+    display: 'flex',
+    alignItems: 'center',
     width: 450,
     height: 60,
-    marginVertical: 5,
+    margin: 5,
   },
   textCheckbox: {
     paddingTop: 18,
   },
   titleCheckboxContainer: {
-    // Añade estilos según tus necesidades
+    fontFamily: 'Poppins',
+    fontSize: 16,
+    fontWeight: '400',
+    fontStyle: 'normal',
+    lineHeight: 24,
+    color: '#111827',
   },
   subtitleCheckboxContainer: {
-    // Añade estilos según tus necesidades
+    fontFamily: 'Poppins',
+    fontSize: 14,
+    fontWeight: '300',
+    fontStyle: 'normal',
+    lineHeight: 20,
+    color: '#6b7280',
+    wordSpacing: 5,
   },
   buttonsFilter: {
-    flexDirection: "row",
-    justifyContent: "space-around",
-    paddingVertical: 30,
+    display: 'flex',
+    justifyContent: 'space-around',
+    width: '100%',
+    paddingTop: 30,
+    paddingBottom: 30,
   },
   btnClearFilter: {
-    // Añade estilos según tus necesidades
+    fontFamily: 'Poppins',
+    fontStyle: 'normal',
+    lineHeight: 24,
+    fontSize: 16,
+    fontWeight: '500',
+    color: '#374151',
+    borderWidth: 1,
+    borderColor: '#111827',
+    borderRadius: 20,
+    paddingTop: 5,
+    paddingRight: 20,
+    paddingBottom: 5,
+    paddingLeft: 20,
   },
   btnApplyFilter: {
-    // Añade estilos según tus necesidades
-  },
-  btnText: {
-    // Añade estilos según tus necesidades
+    fontFamily: 'Poppins',
+    fontStyle: 'normal',
+    lineHeight: 24,
+    fontSize: 16,
+    fontWeight: '500',
+    color: '#f9fafb',
+    borderWidth: 0,
+    borderRadius: 20,
+    backgroundColor: '#0511f2',
+    paddingTop: 5,
+    paddingRight: 20,
+    paddingBottom: 5,
+    paddingLeft: 20,
   },
 });
+
 
 export default Filter1;

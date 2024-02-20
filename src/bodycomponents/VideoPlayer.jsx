@@ -65,61 +65,118 @@ function VideoPlayer() {
   );
 }
 
-const styles = {
+const styles = StyleSheet.create({
   videoTotalContainer: {
-    paddingTop: 100,
-    paddingBottom: 200,
-    backgroundColor: "#F2E6D8",
-    borderRadius: 30,
-    marginBottom: 150,
-    alignItems: "center",
-  },
-  titleVideos: {
-    fontFamily:
-      "Poppins, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
-    fontWeight: "600",
-    lineHeight: 40,
-    fontSize: 36,
-    color: "#111827",
-    fontStyle: "normal",
-    textAlign: "center",
-  },
-  subtitleVideos: {
-    fontFamily:
-      "Poppins, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
-    fontWeight: "400",
-    lineHeight: 28,
-    fontSize: 20,
-    color: "#6b7280",
-    fontStyle: "normal",
-    textAlign: "center",
-    paddingVertical: 20,
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    marginBottom: 100,
+    marginTop: 100,
   },
   videosContainer: {
-    flexDirection: "row",
-    justifyContent: "space-around",
-  },
-  youtubeContainer: {
-    width: 300,
-    height: 200,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-around',
   },
   imgVideo: {
-    width: 100,
-    height: 100,
-    marginBottom: 10,
+    width: '100%',
+    height: 130,
+    borderRadius: 30,
+    cursor: 'pointer',
+    transform: [{ scale: 1 }],
+    transition: 'transform 0.3s ease',
+  },
+  imgVideoHover: {
+    transform: [{ scale: 1.2 }],
+  },
+  linksVideo: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexDirection: 'column',
+    overflow: 'hidden',
+    marginBottom: 20,
+    borderRadius: 30,
+    width: '100%',
   },
   playButton: {
-    backgroundColor: "#f2f2f2",
-    borderRadius: 50,
-    width: 40,
-    height: 40,
-    justifyContent: "center",
-    alignItems: "center",
+    position: 'absolute',
+    cursor: 'pointer',
+    zIndex: 2,
+  },
+  playButtonPrincipal: {
+    position: 'absolute',
+    cursor: 'pointer',
+    zIndex: 2,
+    left: 510,
   },
   iconVideo: {
-    fontSize: 20,
-    color: "#111827",
+    color: '#f2f2f2',
   },
-};
+  youtubeContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    overflow: 'hidden',
+    width: '80%',
+    borderRadius: 40,
+  },
+  video: {
+    borderRadius: 30,
+  },
+  none: {
+    display: 'none',
+  },
+  titleVideos: {
+    marginLeft: 40,
+    marginBottom: 20,
+    fontFamily: 'Poppins',
+    fontSize: 36,
+    fontStyle: 'normal',
+    fontWeight: '600',
+    color: '#111827',
+    lineHeight: 40,
+  },
+  subtitleVideos: {
+    marginLeft: 40,
+    marginBottom: 100,
+    fontFamily: 'Poppins',
+    fontSize: 14,
+    fontStyle: 'normal',
+    fontWeight: '400',
+    color: '#6b7280',
+    lineHeight: 28,
+  },
+  mediaQuery: {
+    videosContainer: {
+      display: 'grid',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+    video: {
+      borderRadius: 30,
+      width: 500,
+    },
+    youtubeContainer: {
+      marginBottom: 30,
+      height: 200,
+      width: '100%',
+      borderRadius: 30,
+    },
+    subtitleVideos: {
+      marginBottom: 50,
+      marginRight: '10%',
+      fontFamily: 'Poppins',
+      fontSize: 14,
+      fontStyle: 'normal',
+      fontWeight: '400',
+      color: '#6b7280',
+      lineHeight: 28,
+      textAlign: 'center',
+    },
+  },
+});
+
 
 export default VideoPlayer;
+
